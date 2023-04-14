@@ -1,0 +1,32 @@
+.third {
+  border: none;
+  background: none;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  transition: color 500ms;
+  overflow: hidden;
+}
+
+.third::after {
+  content: "";
+  background-color: #333;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  width: 100%;
+  height: 100%;
+  transition: bottom 500ms;
+  z-index: -1;
+}
+
+.third:hover {
+  color: white;
+}
+
+.third:hover::after {
+  bottom: 0;
+}

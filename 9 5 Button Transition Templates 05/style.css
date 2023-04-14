@@ -1,0 +1,42 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifth {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(178, 57, 57);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+}
+
+.delete {
+  width: 90px;
+  height: 100%;
+  opacity: 1;
+  transition: width 300ms, opacity 300ms;
+}
+
+.icon {
+  padding: 0 10px;
+  width: 30px;
+  border-left: 1px solid rgb(226, 187, 187);
+  height: 100%;
+  transition: width 300ms, border-left-color 300ms;
+}
+
+.fifth:hover .delete {
+  width: 0px;
+  opacity: 0;
+}
+
+.fifth:hover .icon {
+  width: 100%;
+  border-left-color: transparent;
+  font-weight: bold;
+}
