@@ -1,0 +1,31 @@
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  max-width: 450px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+}
+
+.breadcrumb li span {
+  color: gray;
+}
+
+.breadcrumb li a {
+  color: orange;
+  transition: color 300ms;
+}
+
+.breadcrumb li .unique {
+  color: #000;
+}
+
+.breadcrumb li a:hover {
+  color: rgb(176, 115, 0);
+}
