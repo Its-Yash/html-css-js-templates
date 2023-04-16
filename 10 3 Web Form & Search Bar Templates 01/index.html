@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="style.css" />
+<form>
+  <div class="search">
+    <input type="text" placeholder="Search products" />
+    <button type="submit">Search</button>
+  </div>
+  <div class="align-center bottom">
+    <div class="checkbox-block">
+      <input
+        type="checkbox"
+        name="companies_included"
+        id="companies_included"
+      />
+      <label for="companies_included">Also search companies </label>
+    </div>
+
+    <div class="inline-flex radio-block">
+      <span>Location</span>
+      <div class="inline-flex align-center">
+        <input
+          type="radio"
+          name="location"
+          value="Your location"
+          id="your_location"
+        />
+        <label for="your_location"> Your location </label>
+      </div>
+      <div class="inline-flex align-center">
+        <input type="radio" name="location" value="Worldwide" id="worldwide" />
+        <label for="worldwide"> Worldwide </label>
+      </div>
+    </div>
+  </div>
+</form>

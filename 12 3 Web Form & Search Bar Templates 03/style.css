@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+}
+
+form {
+  max-width: 400px;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio-group,
+select,
+textarea {
+  margin-left: 15px;
+  width: 200px;
+}
+
+textarea {
+  padding: 10px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.radio-item label {
+  margin-left: 5px;
+}
+
+.radio-item input {
+  margin: 0;
+}
+
+.submit-btn {
+  margin-left: 15px;
+  background-color: #555;
+  border: 1px solid #555;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}

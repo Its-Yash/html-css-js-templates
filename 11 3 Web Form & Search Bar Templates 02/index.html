@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="style.css" />
+<form>
+  <div class="input-group">
+    <label for="fname">Firstname</label>
+    <input
+      id="fname"
+      name="fname"
+      placeholder="Enter firstname"
+      required="required"
+    />
+  </div>
+  <div class="input-group">
+    <label for="lname">Lastname</label>
+    <input
+      id="lname"
+      name="lname"
+      placeholder="Enter lastname"
+      required="required"
+    />
+  </div>
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+    />
+  </div>
+  <div class="input-group">
+    <label>Country</label>
+    <select name="country" id="country" required="required">
+      <option value="" selected="selected">Select country</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="American Samoa">American Samoa</option>
+      <option value="Andorra">Andorra</option>
+      <option value="Angola">Angola</option>
+      <option value="Anguilla">Anguilla</option>
+      <option value="Antarctica">Antarctica</option>
+    </select>
+  </div>
+  <div class="input-group">
+    <label for="message">Any message?</label>
+    <textarea id="message" name="message" placeholder="Optional"></textarea>
+  </div>
+  <div class="submit-group">
+    <button type="submit">Submit form</button>
+  </div>
+</form>
