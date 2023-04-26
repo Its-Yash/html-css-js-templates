@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: #c8c7c7;
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.box img {
+  width: 48%;
+}
+
+.translucent {
+  filter: opacity(35%);
+}

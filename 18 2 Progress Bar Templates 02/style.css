@@ -1,0 +1,23 @@
+.second {
+  overflow: hidden;
+  border-radius: 15px;
+  height: 30px;
+  width: 200px;
+}
+
+.second::-webkit-progress-bar {
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.second::-webkit-progress-value {
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 91% 46%) 25px,
+    hsl(41deg 100% 50%) 50px,
+    hsl(63deg 100% 37%) 75px,
+    rgb(85, 255, 0) 100px
+  );
+  border-radius: 15px;
+}

@@ -1,0 +1,95 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400";
+
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+  width: 100vw;
+  padding: 0 1em 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.accordion {
+  border-radius: 8px;
+  width: 70vw;
+  margin: 5rem auto 0;
+  overflow: hidden;
+  padding: 2rem 2.5rem;
+  background-color: white;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.tab {
+  width: 100%;
+  color: #1a252f;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-label:hover {
+  background: #dce7ea;
+}
+
+.tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  line-height: 2rem;
+  color: #1a252f;
+  background: white;
+  transition: all 0.35s;
+}
+
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+
+.tab-close:hover {
+  background: #dce7ea;
+}
+
+input:checked + .tab-label {
+  background: #dce7ea;
+}
+
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1rem;
+}

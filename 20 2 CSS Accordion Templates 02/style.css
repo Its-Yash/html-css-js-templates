@@ -1,0 +1,86 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,400";
+
+body {
+  color: #2c3e50;
+  background: #ecf0f1;
+  width: 100vw;
+  padding: 0 1em 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+  color: #ff6873;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.accordion {
+  border-radius: 8px;
+  width: 70vw;
+  margin: 5rem auto 0;
+  overflow: hidden;
+  padding: 2rem 2.5rem;
+  background-color: white;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.15);
+}
+
+.tab {
+  width: 100%;
+  color: #1a252f;
+  overflow: hidden;
+  margin: 1.4rem 0;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #ff6873;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  color: #ff6873;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  line-height: 2rem;
+  color: #1a252f;
+  background: white;
+  transition: all 0.35s;
+}
+
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+
+.open-tab .tab-label::after {
+  transform: rotate(90deg);
+}
+
+.open-tab .tab-content {
+  max-height: 100vh;
+  padding: 1rem;
+}

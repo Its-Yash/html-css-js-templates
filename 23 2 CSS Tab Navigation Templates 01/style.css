@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DynaPuff", cursive, sans-serif;
+}
+
+body {
+  width: 100vw;
+}
+
+.tabbed-gallery {
+  width: 80vw;
+  margin: 6rem auto 0;
+}
+
+.btn-row {
+  display: grid;
+  grid-template-columns: repeat(3, 8rem);
+  grid-template-rows: 3.5rem;
+  column-gap: 8rem;
+  justify-content: center;
+  padding: 2rem auto;
+  background-color: #1d1d27;
+}
+
+.btn {
+  padding: 4px 2px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.active-btn {
+  color: #fafafa;
+  background-color: #4343f5;
+}
+
+.city {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  display: block;
+  transition: all 400ms ease;
+}
+
+.hidden-city {
+  display: none;
+}
+
+.city img {
+  width: 100%;
+  height: 100%;
+  image-rendering: optimizeQuality;
+}
+
+.city p {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  color: #fafafa;
+  font-size: 3.5rem;
+}

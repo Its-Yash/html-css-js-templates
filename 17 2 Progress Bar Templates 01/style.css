@@ -1,0 +1,14 @@
+.first {
+  border-radius: 0;
+  border: 2px solid purple;
+  height: 30px;
+  width: 250px;
+}
+
+.first::-webkit-progress-bar {
+  background-color: white;
+}
+
+.first::-webkit-progress-value {
+  background-color: purple;
+}
